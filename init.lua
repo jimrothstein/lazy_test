@@ -23,6 +23,7 @@ require('lazy').setup({
   ---
   -- List of plugins...
   {'folke/tokyonight.nvim'},
+  {'jalvesaq/Nvim-R'},
 
   -- lsp-zero
   {
