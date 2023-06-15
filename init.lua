@@ -19,7 +19,10 @@ vim.opt.rtp:prepend(lazypath)
 
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct 
 
+---------------------
 -- plugins to include
+---------------------
+--
 require('lazy').setup({
   ---
   -- List of plugins...
@@ -112,7 +115,7 @@ require('lazy').setup({
       {'L3MON4D3/LuaSnip'},     -- Required
     }
   } 
-})
+})   -- end list of plugins
 
 -- call &  load
 vim.opt.termguicolors = true
@@ -130,3 +133,10 @@ require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.setup()
 
+-- per Lazy.nvim docs, this loads all plugins (but ERROR ... can not resource)
+-- require("lazy").setup("plugins")
+-- require("lazy").setup("config")
+---------------------
+
+-- require("config.keymaps")  -- loads config/keymaps.lua
+-- require("config.luasnip")  -- loads  config/luasnip.lua
